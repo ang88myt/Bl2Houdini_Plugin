@@ -29,7 +29,10 @@ class SimplePanel(bpy.types.Panel):
 
 
 def show_popup_message(message, title="Error", icon='ERROR'):
-    """This function displays a pop-up message in Blender. It takes three parameters:"""
+    """This function displays a pop-up message in Blender. It takes three parameters:
+    @param message: Any
+
+    """
     bpy.context.window_manager.popup_menu(
         lambda self, context: self.layout.label(text=message),
         title=title, icon=icon
@@ -79,9 +82,13 @@ class SendToHoudiniFBX(bpy.types.Operator):
 
         return {'FINISHED'}
 
-    def invoke(self, context, event):
+    def invoke(self, context: object, event):
         """The invoke method is also implemented to handle the operator invocation. It calls the check_file_saved
-            function to ensure the Blender file is saved before executing the operator. """
+            function to ensure the Blender file is saved before executing the operator.
+            @param context: object
+            @param event: Event
+            """
+
         '''Open a pop-up menu if the file is not saved'''
         if not check_file_saved():
             return {'CANCELLED'}

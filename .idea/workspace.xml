@@ -2,10 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c109678-ce63-4365-84c3-b0e67688985b" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/docs/_static/_sphinx_javascript_frameworks_compat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/badge_only.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/Roboto-Slab-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/Roboto-Slab-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/Roboto-Slab-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/Roboto-Slab-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-bold-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-bold-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-normal-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-normal-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-normal.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/fonts/lato-normal.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/js/badge_only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/js/html5shiv-printshiv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/js/html5shiv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/js/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Bl2Houdini_Plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bl2Houdini_Plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/.doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_static/pygments.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_static/pygments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/.doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/.doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/_static/sphinx_highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/houdini_bl.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/import_houdini.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/import_houdini_usd.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/reload_houdini.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/searchindex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/houdini_bl.py" beforeDir="false" afterPath="$PROJECT_DIR$/houdini_bl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +81,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -27,13 +89,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QY9JPP9n278j6fXcJWNFgNwI4j" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/temp/Bl2Houdini_Plugin&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
@@ -121,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688201746059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1688203427023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688203427023</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,7 +208,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial" />
+    <MESSAGE value="add documentation" />
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
