@@ -10,7 +10,8 @@ Welcome to Send_to_Houdini's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules
+modules
+classes
 
 Indices and tables
 ==================

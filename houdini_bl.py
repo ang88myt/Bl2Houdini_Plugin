@@ -53,8 +53,8 @@ class SendToHoudiniFBX(bpy.types.Operator):
     bl_label = 'Send2Hou fbx'
 
     def execute(self, context):
-        '''The class provides the execute method, which is called when the operator is invoked. It performs the following
-         steps:'''
+        """The class provides the execute method, which is called when the operator is invoked. It performs the following
+         steps:"""
 
         '''Retrieves the path of the current Blender file'''
         blend_filepath = bpy.data.filepath
@@ -80,8 +80,8 @@ class SendToHoudiniFBX(bpy.types.Operator):
         return {'FINISHED'}
 
     def invoke(self, context, event):
-        '''The invoke method is also implemented to handle the operator invocation. It calls the check_file_saved
-            function to ensure the Blender file is saved before executing the operator. '''
+        """The invoke method is also implemented to handle the operator invocation. It calls the check_file_saved
+            function to ensure the Blender file is saved before executing the operator. """
         '''Open a pop-up menu if the file is not saved'''
         if not check_file_saved():
             return {'CANCELLED'}
@@ -90,8 +90,8 @@ class SendToHoudiniFBX(bpy.types.Operator):
 
 
 class SendToHoudiniUSD(bpy.types.Operator):
-    '''This class defines an operator for exporting objects to Houdini in USD format. It is similar to the
-    SendToHoudiniFBX class, but it exports objects to USD instead of FBX. The class has '''
+    """This class defines an operator for exporting objects to Houdini in USD format. It is similar to the
+    SendToHoudiniFBX class, but it exports objects to USD instead of FBX. The class has """
     bl_idname = 'object.send_houdini_usd'
     bl_label = 'Send2Hou usd'
 
@@ -115,8 +115,8 @@ class SendToHoudiniUSD(bpy.types.Operator):
         return {'FINISHED'}
 
     def invoke(self, context, event):
-        '''The invoke method is also implemented to handle the operator invocation. It calls the check_file_saved
-            function to ensure the Blender file is saved before executing the operator. '''
+        """The invoke method is also implemented to handle the operator invocation. It calls the check_file_saved
+            function to ensure the Blender file is saved before executing the operator. """
         ''' Open a pop-up menu if the file is not saved'''
         if not check_file_saved():
             return {'CANCELLED'}
