@@ -3,8 +3,8 @@ bl_info = {
     "version": (1, 0),
     "blender": (3, 6, 0),
     "location": "View3D > Toolbar > Houdini",
-    "description": "sending objects to houidini",
-    "catagory": "Houdini"
+    "description": "send objects to houidini",
+    "category": "Houdini"
 }
 
 import bpy
@@ -22,7 +22,16 @@ class SimplePanel(bpy.types.Panel):
     bl_region_type = 'UI'
 
     def draw(self, context):
-        """The draw method of this class is called to draw the panel and add operators to it."""
+        """
+    The draw function is called every time Blender redraws the 3D view.
+    It's where you put all your UI code. The layout variable is a reference to
+    a special UI object that has methods for drawing all kinds of elements.
+
+    :param self: Access the properties of the class
+    :param context: Access the window manager,
+    :return: A list of tuples, the first element in each tuple is a string
+    :doc-author: Trelent
+    """
         layout = self.layout
         layout.operator('object.send_houdini_fbx')
         layout.operator('object.update_fbx')
@@ -30,6 +39,8 @@ class SimplePanel(bpy.types.Panel):
 
 def show_popup_message(message, title="Error", icon='ERROR'):
     """This function displays a pop-up message in Blender. It takes three parameters:
+    @param title: str
+    @param icon: str
     @param message: Any
 
     """
@@ -56,9 +67,18 @@ class SendToHoudiniFBX(bpy.types.Operator):
     bl_label = 'Send2Hou fbx'
 
     def execute(self, context):
-        """The class provides the execute method, which is called when the operator is invoked. It performs the following
-         steps:"""
+        """
+    The execute function is the main function of the operator. It is called when
+    the operator runs, and must contain all the logic needed to perform its task.
+    The execute function can access and modify scene data, as long as it restores
+    the scene to its original state before finishing (see restrictions below). The
+    execute function may also invoke other operators if needed.
 
+    :param self: Refer to the class itself
+    :param context: Access the scene data, and is used to determine what objects are selected
+    :return: A set of status flags that indicate the success or failure of the operator
+    :doc-author: Trelent
+    """
         '''Retrieves the path of the current Blender file'''
         blend_filepath = bpy.data.filepath
 
@@ -83,13 +103,17 @@ class SendToHoudiniFBX(bpy.types.Operator):
         return {'FINISHED'}
 
     def invoke(self, context: object, event):
-        """The invoke method is also implemented to handle the operator invocation. It calls the check_file_saved
-            function to ensure the Blender file is saved before executing the operator.
-            @param context: object
-            @param event: Event
-            """
+        """
+    The invoke function is called when the operator is executed.
+    It can be used to open a pop-up menu if the file is not saved, or to do some other checks before executing the operator.
+    The invoke function must return either {'FINISHED'} or {'CANCELLED'}. If it returns {‘RUNNING_MODAL’}, then it will be called again with an event parameter.
 
-        '''Open a pop-up menu if the file is not saved'''
+    :param self: Refer to the class itself, and is used for
+    :param context: object: Pass the context of the event to
+    :param event: Check if the user has pressed a key
+    :return: A dictionary
+    :doc-author: Trelent
+    """
         if not check_file_saved():
             return {'CANCELLED'}
 
@@ -103,8 +127,16 @@ class SendToHoudiniUSD(bpy.types.Operator):
     bl_label = 'Send2Hou usd'
 
     def execute(self, context):
-        # usdpath = 'C:/temp/test.usd'
+        """
+    The execute function is called when the operator is invoked.
+    It takes a single argument, context, which contains information about the active object and scene.
+    The execute function returns a set of status flags that indicate whether or not it was successful.
 
+    :param self: Access the class attributes and methods
+    :param context: Access the scene information
+    :return: A set
+    :doc-author: Trelent
+    """
         blend_filepath = bpy.data.filepath
         blend_dir = os.path.dirname(blend_filepath)
 
@@ -137,12 +169,17 @@ class UpdateFbx(bpy.types.Operator):
     bl_label = 'Update fbx'
 
     def execute(self, context):
-        """The execute method of this class performs the following steps:
-            Retrieves the path of the current Blender file.
-            Determines the directory of the Blender file.
-            Sets the export filepath for the FBX file by appending the filename with the extension ".fbx".
-            Prints the export filepath to the console.
-            Exports the selected objects to the FBX file using Blender's built-in export_scene.fbx operator."""
+        """
+        The execute function is called when the operator is invoked. It takes a single argument, context, which is a
+        dictionary containing information about the state of Blender at the time this operator was executed. The
+        execute function should return a set of enum items in {‘CANCELLED’, ‘FINISHED’, ‘PASS_THROUGH’} to indicate
+        how Blender should handle this operator.
+
+        :param self: Access the class itself
+        :param context: Access the scene data, active object and so on
+        :return: A dictionary with a finished status
+        :doc-author: Trelent
+        """
         blend_filepath = bpy.data.filepath
         blend_dir = os.path.dirname(blend_filepath)
         export_filepath = os.path.join(blend_dir, bpy.path.display_name_from_filepath(blend_filepath) + ".fbx")
@@ -154,15 +191,29 @@ class UpdateFbx(bpy.types.Operator):
 
 
 def register():
-    """These functions are used to register and unregister the add-on's classes. The register function calls
-    bpy.utils.register_class for each class defined in the add-on, while the unregister function calls
-    bpy.utils.unregister_class for each class. """
+    """
+    The register function is called when the script is loaded.
+    It registers all classes defined in this script, so that Blender knows about them and can use them.
+
+
+    :return: Nothing
+    :doc-author: Trelent
+    """
+
     bpy.utils.register_class(SimplePanel)
     bpy.utils.register_class(SendToHoudiniFBX)
     bpy.utils.register_class(UpdateFbx)
 
 
 def unregister():
+    """
+    The unregister function is called when the add-on is disabled.
+    It removes all classes and functions that were registered in register().
+
+    :return: A list of classes that were registered
+    :doc-author: Trelent
+    """
+
     bpy.utils.unregister_class(SimplePanel)
     bpy.utils.unregister_class(SendToHoudiniFBX)
     bpy.utils.unregister_class(UpdateFbx)

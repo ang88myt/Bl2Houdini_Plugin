@@ -1,15 +1,16 @@
-.. Send_to_Houdini documentation master file, created by
-   sphinx-quickstart on Sat Jul  1 16:06:24 2023.
+.. Blender to Houdini documentation master file, created by
+   sphinx-quickstart on Sun Jul  2 01:45:42 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Send_to_Houdini's documentation!
-===========================================
+Welcome to Blender to Houdini's documentation!
+==============================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   modules
 
 Indices and tables
 ==================

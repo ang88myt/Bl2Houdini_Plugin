@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Send_to_Houdini'
+project = 'Blender to Houdini'
 copyright = '2023, Thiha Aung'
 author = 'Thiha Aung'
 release = '0.1.0'
